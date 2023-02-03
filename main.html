@@ -1,1 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  
+    <base target="_top">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <?!=include("main-css");?>
+  
+  </head>
+  
+  <body>
+    <h1> hello</h1>
+  <div class="row">
+    
+    <div class="input-field col s3">
+      <label> descrption:</label><input type ="text" id ="descInput">
+    </div>
+
+    <div class="input-field col s3">
+      <label> amount:</label><input type ="text" id ="amtInput">
+    </div>
+      <div class="input-field col s3">
+      
+        <select id="lang">
+
+          <option value="need">need</option>
+          <option value="fun">fun</option>
+          <option value="investing">investing</option>
+          <option value="savings">savings</option>
+          <option value="forgive">forgive</option>
+          <option value="knowledge">knowledge</option>
+          <option value="health">health</option>
+          <option value="all">all</option>
+          
+        </select>
+        <label> category:</label>
+      </div>
+
+      <div class="input-field col s3">
+      
+        <select id="trx">
+          <option value="debit">debit</option>
+          <option value="credit">credit</option>
+        </select>
+        <label> category:</label>
+      </div>
+
+
+  </div> 
+    <div class="container">
+      <div class="form-row">
+        <button class="waves-effect waves-light btn-large" id = "btn1" > add </button>
+      </div>
+    </div>
+
+    
+
+<div class="container">
+    <div class="input-field col s3">
+       <input id ="dp1" type="text" class="datepicker">
+    </div>
+    <div class="input-field col s3">
+       <input id ="dp2" type="text" class="datepicker" >
+    </div>
+</div>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <?!=include("main-js");?>
+
+
+
+  </body>
+</html>
 
