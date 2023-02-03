@@ -1,1 +1,27 @@
+<script> 
+   document.addEventListener('DOMContentLoaded', function() {
+    var selectBox = document.querySelectorAll('select');
+    var instances = M.FormSelect.init(selectBox);
+    var datePicker1 = document.getElementById('dp1');
+    var instances = M.Datepicker.init(datePicker1,{ format: 'yyyymmdd' });
+    var datePicker2 = document.getElementById('dp2');
+    var instances = M.Datepicker.init(datePicker2,{ format: 'yyyymmdd' });
+  });
+  document.getElementById("btn1").addEventListener("click",desc);
 
+  function desc()
+  {
+    var u_input ={};
+
+    u_input.desc=  document.getElementById("descInput").value;      
+    u_input.amt=document.getElementById("amtInput").value;
+    u_input.cate2=document.getElementById("lang").value;
+    u_input.cate1=document.getElementById("trx").value;
+    u_input.date1=document.getElementById("dp1").value;
+    u_input.date2=document.getElementById("dp2").value;
+    google.script.run.descClicked(u_input);
+
+    document.getElementById("descInput").value="";
+    document.getElementById("amtInput").value="";
+  }
+</script>
